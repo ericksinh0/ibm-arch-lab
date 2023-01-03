@@ -26,7 +26,7 @@ resource "ibm_is_vpc_address_prefix" "vpc-ap2" {
   cidr = "${var.zone2_cidr}"
 }
 
-resource "ibm_is_subnet" "subnet1" {
+resource ibm_is_subnet subnet1 {
   name            = "subnet1"
   vpc             = "${ibm_is_vpc.vpc1.id}"
   zone            = "${var.zone1}"
