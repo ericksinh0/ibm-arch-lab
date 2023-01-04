@@ -24,7 +24,7 @@ variable "zone2" {
 }
 
 variable "zone3" {
-  defatult = "us-south-3"
+  default = "us-south-3"
   description = "Define the 3rd zone of the region"
 }
 
