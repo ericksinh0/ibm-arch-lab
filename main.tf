@@ -124,4 +124,7 @@ resource "ibm_is_security_group_rule" "sg1_tcp_rule_80" {
   }
 }
 
-
+resource "ibm_is_floating_ip" "floatingip3" {
+  name = "fip3"
+  target = "${ibm_is_instance.instance3.primary_network_interface.0.id}"
+}
