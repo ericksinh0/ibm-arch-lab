@@ -9,7 +9,7 @@ variable "ibmcloud_region" {
 }
 
 variable "vpc_name" {
-  default = ""
+  default = "default"
   description = "Name of your VPC"
 }
 
